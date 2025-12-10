@@ -10,7 +10,29 @@ pinned: false
 ---
 ALGORITHM NAME: Merge_Sort
 
+SCREENSHOTS: 
+### Initial Interface - Array Generation
+![Array Generation](images/01_generate.png)
+*User enters desired array length and generates random unsorted array*
+
+### Generated Array
+![Array Display](images/02_array.png)
+*Random array is displayed*
+
+### Step-by-Step Visualization - Sorting
+![Split Visualization](images/03_sorting.png)
+*The algorithm splits and merges with colored bars*
+
+### Final Result
+![Final Sorted Array](images/04_final.png)
+*The fully sorted array with success message*
+
+### Error Handling
+![Error Handling](images/05_error.png)
+*Validation prevents invalid inputs with helpful error messages*
+
 DEMO VIDEO: 
+**[Watch Full Demo Video](https://drive.google.com/file/d/1Z9pehUnhumExNNQUfcRtPdDOpK9wy1Rn/view?usp=sharing)**
 
 STEPS TO RUN:
 Locally (needs Python 3.8 or higher): 
@@ -19,7 +41,7 @@ Locally (needs Python 3.8 or higher):
     3) Run application: "python app.py"
     4) Open in browser (app will open automatically)
     
-HIGGING FACE LINK: https://huggingface.co/spaces/JannahS/Merge_Sort
+HuGGING FACE LINK: https://huggingface.co/spaces/JannahS/Merge_Sort
 
 AUTHOR AND ACKNOWLEDGMENTS:
 Author: Jannah Sultan
@@ -192,7 +214,12 @@ To put it simply, the user enters the desired array length and the program gener
         OUTPUT: Update bar plot with new colours, display text explanation of what just happened, and keep next step button active (User clicks next step button repeatedly until array is sorted)
               NOTE: When complete, show all bars in final colour, display sorted message, and show 'try another?' button
      
-  5) Page 4: Resetting Page to Start
+  4) Page 4: Resetting Page to Start
         INPUT: User clicks 'try another?' button
         PROCCESSING: Clearing all data and resetting UI to initial state
         OUTPUT: Return to array length input screen to be ready to generate a new array
+     
+  5) FLOWCHART:
+     ![Flow Chart](flowchart1.jpg)
+     ![Array Display](flowchart2.jpg)
+     
