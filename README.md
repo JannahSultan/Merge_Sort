@@ -322,6 +322,6 @@ To put it simply, the user enters the desired array length and the program gener
         OUTPUT: Return to array length input screen to be ready to generate a new array
      
   5) FLOWCHART:
-     ![FlowChart Page 1](flowchart1.jpg)
-     ![FlowChart Page 2](flowchart2.jpg)
+     ![FlowChart Page 1](images/flowchart1.jpg)
+     ![FlowChart Page 2](images/flowchart2.jpg)
      
