@@ -8,9 +8,9 @@ sdk_version: "5.9.1"
 app_file: app.py
 pinned: false
 ---
-ALGORITHM NAME: Merge_Sort
+# ALGORITHM NAME: Merge_Sort
 
-SCREENSHOTS: 
+# SCREENSHOTS: 
 ### Initial Interface - Array Generation
 ![Array Generation](images/01_generate.png)
 *User enters desired array length and generates random unsorted array*
@@ -31,26 +31,27 @@ SCREENSHOTS:
 ![Error Handling](images/05_error.png)
 *Validation prevents invalid inputs with helpful error messages*
 
-DEMO VIDEO: 
+# DEMO VIDEO: 
 **[Watch Full Demo Video](https://drive.google.com/file/d/1Z9pehUnhumExNNQUfcRtPdDOpK9wy1Rn/view?usp=sharing)**
 
-STEPS TO RUN:
+# STEPS TO RUN:
 Locally (needs Python 3.8 or higher): 
     1) Clone repository: "git clone https://github.com/JannahSultan/Merge_Sort.git", "cd Merge_Sort"
     2) Install dependencies: "pip install -r requirements.txt"
     3) Run application: "python app.py"
     4) Open in browser (app will open automatically)
     
-HuGGING FACE LINK: https://huggingface.co/spaces/JannahS/Merge_Sort
+# HUGGING FACE LINK: https://huggingface.co/spaces/JannahS/Merge_Sort
 
-AUTHOR AND ACKNOWLEDGMENTS:
+# AUTHOR AND ACKNOWLEDGMENTS:
 Author: Jannah Sultan
 Course: CISC-121 - Intro to Computing I
 Institution: Queen's University
 Date: 9th December 2025
 Acknowledgments: Course Proffessor for project guidelines, Gradio for UI library, Hugging Face for free hosting platform, Claude AI for debugging help
 
-TESTING AND VERIFICATION:
+# TESTING AND VERIFICATION:
+
     Test 1: Small Array (Length = 5)
             Input: Length = 5
             Generated Array: [12, 3, 27, 8, 15]
@@ -75,7 +76,8 @@ TESTING AND VERIFICATION:
             Expected: Clear visualization of multiple recursion levels
             Result: Sorted in ascending order
 
-Edge Case Testing
+### Edge Case Testing
+
     Edge Case 1: Empty Input
                  Input: "" (blank field)
                  Expected: Error message
@@ -106,10 +108,10 @@ Edge Case Testing
                  Expected: Error message
                  Result: "❌ Please enter a valid integer!"
 
-PROBLEM BREAKDOWN AND COMPUTATIONAL THINKING:
+# PROBLEM BREAKDOWN AND COMPUTATIONAL THINKING:
 I chose to implement Merge Sort because I already understood its "divide and conquer" strategy well, so I could easily visualize it in a step by step demonstration. The splitting and merging phases are distinct and easy to show graphically. It also has a constant time complexity (O (n log n)), so there are no worst case scenarios where it becomes extremely slow, and therefore, the visualization runs smoothly regardless of input, making it reliable for demonstrations like mine.
 
-DECOMPOSITION: 
+## DECOMPOSITION: 
 My algorithm can be be decomposed into smaller more manageable parts, almost like steps to help me plan out what to implement:
   1) Create a random unsorted array based on user input of length
        1.1) Check if input is valid (positive integer within limits)
@@ -143,7 +145,7 @@ My algorithm can be be decomposed into smaller more manageable parts, almost lik
       7.2) Reset UI to initial configuration
       7.3) Re-enable disabled controls
 
-PATTERN RECOGNITION:
+## PATTERN RECOGNITION:
   1) Every array length user input goes through the same validation sequence:
        1.1) Recieve input, Check if Empty, Check if int, Check range, 
        1.2) Return result or Error
@@ -178,7 +180,7 @@ PATTERN RECOGNITION:
              - reset button enabled
   8) All error handling follows the same structure with emoji prefixes and clear user friendly language (Detect Invalid Input, Generate Error Message (emoji + text), Return to User, Keep UI in Safe State)
 
-ABSTRACTION:
+## ABSTRACTION:
 The user is shown information that is essential to the GUI and to their understanding of the merge sort algorithm. They don't see, however, the implementation details behind that GUI. 
     1) SHOWN TO USER:
         1.1) The array values as visual bars in chart
@@ -195,7 +197,7 @@ The user is shown information that is essential to the GUI and to their understa
         2.5) Gradio state management
         2.6) Python-specific syntax
 
-ALGORITHM DESIGN:
+## ALGORITHM DESIGN:
 To put it simply, the user enters the desired array length and the program generates an array of randomized numbers of that length. When start sorting button is pressed, the barplot visualization shows, and when the next step button is pressed the merge sort goes through the array and sorts it visually. After the final sorted result is visible, the user can reset the interface and try another input.
 
   1) Page 1: Generating an Array
