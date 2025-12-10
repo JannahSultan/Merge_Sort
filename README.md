@@ -50,15 +50,22 @@ Locally (needs Python 3.8 or higher):
 
 # AUTHOR AND ACKNOWLEDGMENTS:
 
-Author: Jannah Sultan
+**Author:** Jannah Sultan
 
-Course: CISC-121 - Intro to Computing I
+**Course:** CISC-121 - Intro to Computing I
 
-Institution: Queen's University
+**Institution:** Queen's University
 
-Date: 9th December 2025
+**Date:** 9th December 2025
 
-Acknowledgments: Course Proffessor for project guidelines, Gradio for UI library, Hugging Face for free hosting platform, Claude AI for debugging help
+**Acknowledgments:** Course Proffessor for project guidelines, Gradio for UI library, Hugging Face for free hosting platform, Claude AI for debugging help
+
+**AI Usage Acknowledgment:** 
+
+In this final project, I used Claude AI (level 4) for code related questions as well as instructional help setting up my github repository and hugging face space. I used it to make suggestions so my code can be more efficient, shorter, and make more sense and providing it with the draft code for each problem I encounter and am not able to debug by myself.
+
+**Link to CLaude AI chat:** https://claude.ai/share/a478c82d-5fdf-442b-9d65-2e1c2d2b0ad8
+
 
 # TESTING AND VERIFICATION:
 
@@ -287,7 +294,7 @@ The user is shown information that is essential to the GUI and to their understa
 ## ALGORITHM DESIGN:
 To put it simply, the user enters the desired array length and the program generates an array of randomized numbers of that length. When start sorting button is pressed, the barplot visualization shows, and when the next step button is pressed the merge sort goes through the array and sorts it visually. After the final sorted result is visible, the user can reset the interface and try another input.
 
-  1) Page 1: Generating an Array
+  1) **Page 1: Generating an Array**
      
         INPUT: a positive integer between 1 and 50 in array length field
      
@@ -295,7 +302,7 @@ To put it simply, the user enters the desired array length and the program gener
      
         OUTPUT: Display array as list: [a, b, c, d] and enable the start sorting button
      
-  2) Page 2: Initializing the Sorting
+  2) **Page 2: Initializing the Sorting**
      
         INPUT: User clicks the start sorting button
      
@@ -303,7 +310,7 @@ To put it simply, the user enters the desired array length and the program gener
      
         OUTPUT: Show coloured bars representing array values, display next step button, and show instructions ("Click next step to begin sorting")
      
-  3) Page 3:Stepping through Sorting (repeatedly)
+  3) **Page 3:Stepping through Sorting (repeatedly)**
      
         INPUT: User clicks next step button
      
@@ -313,7 +320,7 @@ To put it simply, the user enters the desired array length and the program gener
      
               NOTE: When complete, show all bars in final colour, display sorted message, and show 'try another?' button
      
-  4) Page 4: Resetting Page to Start
+  4) **Page 4: Resetting Page to Start**
      
         INPUT: User clicks 'try another?' button
      
@@ -321,7 +328,7 @@ To put it simply, the user enters the desired array length and the program gener
      
         OUTPUT: Return to array length input screen to be ready to generate a new array
      
-  5) FLOWCHART:
+  5) **FLOWCHART:**
      
      ![FlowChart Page 1](images/flowchart1.jpg)
      
