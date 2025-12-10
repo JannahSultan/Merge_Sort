@@ -3,7 +3,7 @@ Merge Sort Visualizer - Interactive Tool
 This application demonstrates the merge sort 
 algorithm with step by step visualization
 Author: Jannah Sultan
-Date: 10th December 2025
+Date: 9th December 2025
 """
 import random
 import gradio as gr
